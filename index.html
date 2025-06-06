@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Nadine</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffe4ec, #e0f7fa);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 28px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #fffde7;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 48px;
+      color: #ff69b4;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 30px;
+      animation: floatUp 10s infinite linear;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .name-title {
+      font-size: 50px;
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #7b4397;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 90%;
+      height: auto;
+    }
+
+    .info-card {
+      max-width: 700px;
+      background-color: #ffffffd9;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    .info-card ul {
+      list-style-type: "💖 ";
+      padding: 0;
+      font-size: 28px;
+      color: #4a148c;
+    }
+
+    .info-card li {
+      margin: 15px 0;
+    }
+
+    /* Floating Emojis */
+    .emoji:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .emoji:nth-child(2) { left: 25%; animation-delay: 2s; }
+    .emoji:nth-child(3) { left: 45%; animation-delay: 4s; }
+    .emoji:nth-child(4) { left: 65%; animation-delay: 1s; }
+    .emoji:nth-child(5) { left: 85%; animation-delay: 3s; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Floating Emojis -->
+  <div class="emoji">🎈</div>
+  <div class="emoji">💖</div>
+  <div class="emoji">🌈</div>
+  <div class="emoji">✨</div>
+  <div class="emoji">💫</div>
+
+  <header>
+    <a href="index.html">About Me</a>
+    <a href="karakter.html">Favorite Character</a>
+  </header>
+
+  <div class="name-title">Nadineee 🌸</div>
+
+  <img class="profile-img" src="sigmaaa.png" alt="Nadine Image">
+
+  <div class="info-card">
+    <ul>
+      <li>I love to sing 🎤</li>
+      <li>I love to play piano 🎹</li>
+      <li>I'm 14 Years old 🎉</li>
+      <li>My full name is Nadine Nathania Sutisna 🌟</li>
+    </ul>
+  </div>
+
+</body>
+</html>

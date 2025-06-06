@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorite Character - Hirono</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffeef2, #e0f7fa);
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 28px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: aquamarine;
+      text-shadow: 0 0 5px #fff;
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 30px;
+      animation: floatUp 10s infinite linear;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .title {
+      font-size: 50px;
+      text-align: center;
+      color: #c2185b;
+      margin-top: 40px;
+    }
+
+    .img-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .img-container img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .info-card {
+      max-width: 800px;
+      background-color: #ffffffde;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      font-size: 24px;
+      color: #4a148c;
+    }
+
+    /* Floating Emojis */
+    .emoji:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .emoji:nth-child(2) { left: 30%; animation-delay: 2s; }
+    .emoji:nth-child(3) { left: 50%; animation-delay: 4s; }
+    .emoji:nth-child(4) { left: 70%; animation-delay: 1s; }
+    .emoji:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Floating Emojis -->
+  <div class="emoji">🎈</div>
+  <div class="emoji">💖</div>
+  <div class="emoji">🌈</div>
+  <div class="emoji">✨</div>
+  <div class="emoji">💫</div>
+
+  <header>
+    <a href="index.html">About Me</a>
+    <a href="karakter.html">Favorite Character</a>
+  </header>
+
+  <div class="title">Hirono 🌸</div>
+
+  <div class="img-container">
+    <img src="hirono.png" alt="Hirono Image" height="750">
+  </div>
+
+  <div class="info-card">
+    I really love Hirono because Hirono is a beloved character created by the Chinese artist Lang, known for its deep emotional resonance and unique artistic style. People are drawn to Hirono because it embodies a wide range of human emotions—love, joy, sadness, fear, and more—making it highly relatable. The character's design and storytelling reflect themes of self-discovery and personal growth, which many collectors and fans find meaningful.
+  </div>
+
+</body>
+</html>
